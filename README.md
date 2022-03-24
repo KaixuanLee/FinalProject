@@ -5,9 +5,9 @@ Advaced Intro to Machine Learning _CSCI642
 https://github.com/amzn/convolutional-handwriting-gan
 
 #other useful link
-    #ScrabbleGAN — Adversarial Generation of Handwritten Text Images
-    https://towardsdatascience.com/scrabblegan-adversarial-generation-of-handwritten-text-images-628f8edcfeed
-    #SimpleHTR 
-    https://github.com/githubharald/SimpleHTR
-    #CRNN
-    https://github.com/Belval/CRNN
+##ScrabbleGAN — Adversarial Generation of Handwritten Text Images
+https://towardsdatascience.com/scrabblegan-adversarial-generation-of-handwritten-text-images-628f8edcfeed
+##SimpleHTR 
+https://github.com/githubharald/SimpleHTR
+##CRNN
+https://github.com/Belval/CRNN
