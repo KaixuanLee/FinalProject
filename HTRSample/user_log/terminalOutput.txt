@@ -1,0 +1,365 @@
+--------------------Begin Train--------------------
+2022-04-12 15:24:48.050366: I tensorflow/stream_executor/cuda/cuda_dnn.cc:368] Loaded cuDNN version 8200
+2022-04-12 15:24:49.956262: I tensorflow/stream_executor/cuda/cuda_blas.cc:1786] TensorFloat-32 will be used for the matrix multiplichis will only be logged once.
+--------------------Begin Validate--------------------
+Setting up a new session...
+--------------------Validate Summary --------------------
+Character error rate: 98.22914349276974%. Word accuracy: 6.1567811307665625%.
+--------------------Validate Summary END --------------------
+--------------------Error rate improved !!!--------------------
+Model saved
+--------------------Begin Train--------------------
+--------------------Begin Validate--------------------
+Setting up a new session...
+--------------------Validate Summary --------------------
+Character error rate: 75.30144605116796%. Word accuracy: 13.51023239680888%.
+--------------------Validate Summary END --------------------
+--------------------Error rate improved !!!--------------------
+WARNING:tensorflow:From D:\Program Files (x86)\Python\Python310\lib\site-packages\tensorflow\python\training\saver.py:1052: remove_ch (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use standard file APIs to delete files with this prefix.
+Model saved
+--------------------Begin Train--------------------
+--------------------Begin Validate--------------------
+Setting up a new session...
+--------------------Validate Summary --------------------
+Character error rate: 53.775305895439374%. Word accuracy: 24.523066250433576%.
+--------------------Validate Summary END --------------------
+--------------------Error rate improved !!!--------------------
+Model saved
+--------------------Begin Train--------------------
+--------------------Begin Validate--------------------
+Setting up a new session...
+--------------------Validate Summary --------------------
+Character error rate: 33.04115684093437%. Word accuracy: 40.062434963579605%.
+--------------------Validate Summary END --------------------
+--------------------Error rate improved !!!--------------------
+Model saved
+--------------------Begin Train--------------------
+--------------------Begin Validate--------------------
+Setting up a new session...
+--------------------Validate Summary --------------------
+Character error rate: 27.016685205784203%. Word accuracy: 46.53139091224419%.
+--------------------Validate Summary END --------------------
+--------------------Error rate improved !!!--------------------
+Model saved
+--------------------Begin Train--------------------
+--------------------Begin Validate--------------------
+Setting up a new session...
+--------------------Validate Summary --------------------
+Character error rate: 23.946607341490544%. Word accuracy: 50.71106486298994%.
+--------------------Validate Summary END --------------------
+--------------------Error rate improved !!!--------------------
+Model saved
+--------------------Begin Train--------------------
+--------------------Begin Validate--------------------
+Setting up a new session...
+--------------------Validate Summary --------------------
+Character error rate: 21.61957730812013%. Word accuracy: 53.78078390565383%.
+--------------------Validate Summary END --------------------
+--------------------Error rate improved !!!--------------------
+Model saved
+--------------------Begin Train--------------------
+--------------------Begin Validate--------------------
+Setting up a new session...
+--------------------Validate Summary --------------------
+Character error rate: 20.404894327030032%. Word accuracy: 56.13943808532779%.
+--------------------Validate Summary END --------------------
+--------------------Error rate improved !!!--------------------
+Model saved
+--------------------Begin Train--------------------
+--------------------Begin Validate--------------------
+Setting up a new session...
+--------------------Validate Summary --------------------
+Character error rate: 18.496106785317018%. Word accuracy: 59.29587235518557%.
+--------------------Validate Summary END --------------------
+--------------------Error rate improved !!!--------------------
+Model saved
+--------------------Begin Train--------------------
+--------------------Begin Validate--------------------
+Setting up a new session...
+--------------------Validate Summary --------------------
+Character error rate: 18.100111234705228%. Word accuracy: 59.573361082206034%.
+--------------------Validate Summary END --------------------
+--------------------Error rate improved !!!--------------------
+Model saved
+--------------------Begin Train--------------------
+--------------------Begin Validate--------------------
+Setting up a new session...
+--------------------Validate Summary --------------------
+Character error rate: 17.098998887652947%. Word accuracy: 61.18626430801248%.
+--------------------Validate Summary END --------------------
+--------------------Error rate improved !!!--------------------
+Model saved
+--------------------Begin Train--------------------
+--------------------Begin Validate--------------------
+Setting up a new session...
+--------------------Validate Summary --------------------
+Character error rate: 16.627363737486096%. Word accuracy: 62.12278876170656%.
+--------------------Validate Summary END --------------------
+--------------------Error rate improved !!!--------------------
+Model saved
+--------------------Begin Train--------------------
+--------------------Begin Validate--------------------
+Setting up a new session...
+--------------------Validate Summary --------------------
+Character error rate: 15.768631813125694%. Word accuracy: 63.59694762400277%.
+--------------------Validate Summary END --------------------
+--------------------Error rate improved !!!--------------------
+Model saved
+--------------------Begin Train--------------------
+--------------------Begin Validate--------------------
+Setting up a new session...
+--------------------Validate Summary --------------------
+Character error rate: 15.666295884315906%. Word accuracy: 63.64897676031911%.
+--------------------Validate Summary END --------------------
+--------------------Error rate improved !!!--------------------
+Model saved
+--------------------Begin Train--------------------
+--------------------Begin Validate--------------------
+Setting up a new session...
+--------------------Validate Summary --------------------
+Character error rate: 14.896551724137929%. Word accuracy: 65.01907734998265%.
+--------------------Validate Summary END --------------------
+--------------------Error rate improved !!!--------------------
+Model saved
+--------------------Begin Train--------------------
+--------------------Begin Validate--------------------
+Setting up a new session...
+--------------------Validate Summary --------------------
+Character error rate: 15.052280311457174%. Word accuracy: 64.75893166840098%.
+--------------------Validate Summary END --------------------
+--------------------Error rate not improved !!!--------------------
+Best rate: 15.052280311457174%
+--------------------Begin Train--------------------
+--------------------Begin Validate--------------------
+Setting up a new session...
+--------------------Validate Summary --------------------
+Character error rate: 13.873192436040044%. Word accuracy: 66.44120707596254%.
+--------------------Validate Summary END --------------------
+--------------------Error rate improved !!!--------------------
+Model saved
+--------------------Begin Train--------------------
+--------------------Begin Validate--------------------
+Setting up a new session...
+--------------------Validate Summary --------------------
+Character error rate: 14.117908787541714%. Word accuracy: 67.2216441207076%.
+--------------------Validate Summary END --------------------
+--------------------Error rate not improved !!!--------------------
+Best rate: 14.117908787541714%
+--------------------Begin Train--------------------
+--------------------Begin Validate--------------------
+Setting up a new session...
+--------------------Validate Summary --------------------
+Character error rate: 13.695216907675196%. Word accuracy: 67.29101630246271%.
+--------------------Validate Summary END --------------------
+--------------------Error rate improved !!!--------------------
+Model saved
+--------------------Begin Train--------------------
+--------------------Begin Validate--------------------
+Setting up a new session...
+--------------------Validate Summary --------------------
+Character error rate: 14.126807563959956%. Word accuracy: 66.75338189386056%.
+--------------------Validate Summary END --------------------
+--------------------Error rate not improved !!!--------------------
+Best rate: 14.126807563959956%
+--------------------Begin Train--------------------
+--------------------Begin Validate--------------------
+Setting up a new session...
+--------------------Validate Summary --------------------
+Character error rate: 13.410456062291434%. Word accuracy: 68.00208116545265%.
+--------------------Validate Summary END --------------------
+--------------------Error rate improved !!!--------------------
+Model saved
+--------------------Begin Train--------------------
+--------------------Begin Validate--------------------
+Setting up a new session...
+--------------------Validate Summary --------------------
+Character error rate: 12.92992213570634%. Word accuracy: 68.90391952826917%.
+--------------------Validate Summary END --------------------
+--------------------Error rate improved !!!--------------------
+Model saved
+--------------------Begin Train--------------------
+--------------------Begin Validate--------------------
+Setting up a new session...
+--------------------Validate Summary --------------------
+Character error rate: 12.867630700778642%. Word accuracy: 68.97329171002427%.
+--------------------Validate Summary END --------------------
+--------------------Error rate improved !!!--------------------
+Model saved
+--------------------Begin Train--------------------
+--------------------Begin Validate--------------------
+Setting up a new session...
+--------------------Validate Summary --------------------
+Character error rate: 12.569521690767518%. Word accuracy: 69.4588969823101%.
+--------------------Validate Summary END --------------------
+--------------------Error rate improved !!!--------------------
+Model saved
+--------------------Begin Train--------------------
+--------------------Begin Validate--------------------
+Setting up a new session...
+--------------------Validate Summary --------------------
+Character error rate: 13.010011123470521%. Word accuracy: 68.43565730142213%.
+--------------------Validate Summary END --------------------
+--------------------Error rate not improved !!!--------------------
+Best rate: 13.010011123470521%
+--------------------Begin Train--------------------
+--------------------Begin Validate--------------------
+Setting up a new session...
+--------------------Validate Summary --------------------
+Character error rate: 12.489432703003336%. Word accuracy: 69.68435657301421%.
+--------------------Validate Summary END --------------------
+--------------------Error rate improved !!!--------------------
+Model saved
+--------------------Begin Train--------------------
+--------------------Begin Validate--------------------
+Setting up a new session...
+--------------------Validate Summary --------------------
+Character error rate: 12.631813125695219%. Word accuracy: 69.3721817551162%.
+--------------------Validate Summary END --------------------
+--------------------Error rate not improved !!!--------------------
+Best rate: 12.631813125695219%
+--------------------Begin Train--------------------
+--------------------Begin Validate--------------------
+Setting up a new session...
+--------------------Validate Summary --------------------
+Character error rate: 12.008898776418242%. Word accuracy: 70.58619493583073%.
+--------------------Validate Summary END --------------------
+--------------------Error rate improved !!!--------------------
+Model saved
+--------------------Begin Train--------------------
+--------------------Begin Validate--------------------
+Setting up a new session...
+--------------------Validate Summary --------------------
+Character error rate: 12.315906562847609%. Word accuracy: 70.3607353451266%.
+--------------------Validate Summary END --------------------
+--------------------Error rate not improved !!!--------------------
+Best rate: 12.315906562847609%
+--------------------Begin Train--------------------
+--------------------Begin Validate--------------------
+Setting up a new session...
+--------------------Validate Summary --------------------
+Character error rate: 12.600667408231367%. Word accuracy: 69.9445022545959%.
+--------------------Validate Summary END --------------------
+--------------------Error rate not improved !!!--------------------
+Best rate: 12.600667408231367%
+--------------------Begin Train--------------------
+--------------------Begin Validate--------------------
+Setting up a new session...
+--------------------Validate Summary --------------------
+Character error rate: 12.573971078976639%. Word accuracy: 69.71904266389178%.
+--------------------Validate Summary END --------------------
+--------------------Error rate not improved !!!--------------------
+Best rate: 12.573971078976639%
+--------------------Begin Train--------------------
+--------------------Begin Validate--------------------
+Setting up a new session...
+--------------------Validate Summary --------------------
+Character error rate: 12.191323692992214%. Word accuracy: 70.32604925424904%.
+--------------------Validate Summary END --------------------
+--------------------Error rate not improved !!!--------------------
+Best rate: 12.191323692992214%
+--------------------Begin Train--------------------
+--------------------Begin Validate--------------------
+Setting up a new session...
+--------------------Validate Summary --------------------
+Character error rate: 12.03559510567297%. Word accuracy: 70.63822407214707%.
+--------------------Validate Summary END --------------------
+--------------------Error rate not improved !!!--------------------
+Best rate: 12.03559510567297%
+--------------------Begin Train--------------------
+--------------------Begin Validate--------------------
+Setting up a new session...
+--------------------Validate Summary --------------------
+Character error rate: 11.764182424916573%. Word accuracy: 71.41866111689212%.
+--------------------Validate Summary END --------------------
+--------------------Error rate improved !!!--------------------
+Model saved
+--------------------Begin Train--------------------
+--------------------Begin Validate--------------------
+Setting up a new session...
+--------------------Validate Summary --------------------
+Character error rate: 11.764182424916573%. Word accuracy: 71.7655220256677%.
+--------------------Validate Summary END --------------------
+--------------------Error rate not improved !!!--------------------
+Best rate: 11.764182424916573%
+--------------------Begin Train--------------------
+--------------------Begin Validate--------------------
+Setting up a new session...
+--------------------Validate Summary --------------------
+Character error rate: 12.102335928809788%. Word accuracy: 70.60353798126951%.
+--------------------Validate Summary END --------------------
+--------------------Error rate not improved !!!--------------------
+Best rate: 12.102335928809788%
+--------------------Begin Train--------------------
+--------------------Begin Validate--------------------
+Setting up a new session...
+--------------------Validate Summary --------------------
+Character error rate: 12.048943270300335%. Word accuracy: 70.4474505723205%.
+--------------------Validate Summary END --------------------
+--------------------Error rate not improved !!!--------------------
+Best rate: 12.048943270300335%
+--------------------Begin Train--------------------
+--------------------Begin Validate--------------------
+Setting up a new session...
+--------------------Validate Summary --------------------
+Character error rate: 12.364849833147943%. Word accuracy: 70.2046479361776%.
+--------------------Validate Summary END --------------------
+--------------------Error rate not improved !!!--------------------
+Best rate: 12.364849833147943%
+--------------------Begin Train--------------------
+--------------------Begin Validate--------------------
+Setting up a new session...
+--------------------Validate Summary --------------------
+Character error rate: 11.57285873192436%. Word accuracy: 71.81755116198404%.
+--------------------Validate Summary END --------------------
+--------------------Error rate improved !!!--------------------
+Model saved
+--------------------Begin Train--------------------
+--------------------Begin Validate--------------------
+Setting up a new session...
+--------------------Validate Summary --------------------
+Character error rate: 11.412680756395996%. Word accuracy: 71.95629552549427%.
+--------------------Validate Summary END --------------------
+--------------------Error rate improved !!!--------------------
+Model saved
+--------------------Begin Train--------------------
+--------------------Begin Validate--------------------
+Setting up a new session...
+--------------------Validate Summary --------------------
+Character error rate: 12.088987764182425%. Word accuracy: 71.08914325355532%.
+--------------------Validate Summary END --------------------
+--------------------Error rate not improved !!!--------------------
+Best rate: 12.088987764182425%
+--------------------Begin Train--------------------
+--------------------Begin Validate--------------------
+Setting up a new session...
+--------------------Validate Summary --------------------
+Character error rate: 11.630700778642938%. Word accuracy: 71.41866111689212%.
+--------------------Validate Summary END --------------------
+--------------------Error rate not improved !!!--------------------
+Best rate: 11.630700778642938%
+--------------------Begin Train--------------------
+--------------------Begin Validate--------------------
+Setting up a new session...
+--------------------Validate Summary --------------------
+Character error rate: 11.563959955506117%. Word accuracy: 71.67880679847381%.
+--------------------Validate Summary END --------------------
+--------------------Error rate not improved !!!--------------------
+Best rate: 11.563959955506117%
+--------------------Begin Train--------------------
+--------------------Begin Validate--------------------
+Setting up a new session...
+--------------------Validate Summary --------------------
+Character error rate: 11.71078976640712%. Word accuracy: 71.54006243496357%.
+--------------------Validate Summary END --------------------
+--------------------Error rate not improved !!!--------------------
+Best rate: 11.71078976640712%
+--------------------Begin Train--------------------
+--------------------Begin Validate--------------------
+Setting up a new session...
+--------------------Validate Summary --------------------
+Character error rate: 11.546162402669632%. Word accuracy: 71.59209157127991%.
+--------------------Validate Summary END --------------------
+--------------------Error rate not improved !!!--------------------
+Best rate: 11.546162402669632%
