@@ -9,9 +9,6 @@ https://github.com/amzn/convolutional-handwriting-gan
 ##ScrabbleGAN — Adversarial Generation of Handwritten Text Images
 https://towardsdatascience.com/scrabblegan-adversarial-generation-of-handwritten-text-images-628f8edcfeed
 
-##SimpleHTR
-https://github.com/githubharald/SimpleHTR
-
 ##CRNN
 https://github.com/Belval/CRNN
 
