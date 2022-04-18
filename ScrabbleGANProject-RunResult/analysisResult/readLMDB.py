@@ -15,8 +15,8 @@ def read_from_lmdb(lmdb_path):
         data = txn.get(img_key.encode("utf-8"))
         if(data != None):
           img_name = str(i)+'.jpg'
-          with open(os.path.join("../result/"+img_name),'wb') as f:
+          with open(os.path.join("../result2/"+img_name),'wb') as f:
               f.write(data)
 
-read_from_lmdb("E:/convolutional-handwriting-gan-master/lmdb_files/finalP_IAM_concat200k")
+read_from_lmdb("E:/MyUniversity/Advaced Intro to Machine Learning _CSCI642/final project/convolutional-handwriting-gan-master/lmdb_files/finalProjectDemo2_IAM_concat100k")
 

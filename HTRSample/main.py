@@ -152,7 +152,7 @@ def main():
     datasets_split = 0.95
     lmdb_path = Path("datasets_IAM")
     line_mode = False
-    infer_img_path = "datasets_IAM/samples_wordImages/a01-000u/a01-000u-00-06.png"
+    infer_img_path = "datasets_IAM/samples_wordImages/a01-000u/a01-000u-03-05.png"
 
     if command == 'train':
         loader = DataLoadLmdb(lmdb_path, batch_size, datasets_split)
