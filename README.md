@@ -8,6 +8,9 @@ https://github.com/amzn/convolutional-handwriting-gan
 
 ### Other useful link
 
+#### IAM handwriting database
+https://fki.tic.heia-fr.ch/databases/iam-handwriting-database
+
 #### CRNN
 https://github.com/Belval/CRNN
 
