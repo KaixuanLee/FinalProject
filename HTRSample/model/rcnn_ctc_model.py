@@ -5,25 +5,19 @@ import numpy as np
 import tensorflow as tf
 from data_handle.data_load_lmdb import Batch
 
-# Disable eager mode
 tf.compat.v1.disable_eager_execution()
 
 class RCNNCTCModel:
-    """Minimalistic TF model for HTR."""
     def __init__(self,
                  char_list: List[str],
                  must_restore: bool = False,
                  dump: bool = False) -> None:
-        """Init model: add CNN, RNN and CTC and initialize TF."""
         self.dump = dump
         self.char_list = char_list
         self.must_restore = must_restore
         self.snap_ID = 0
 
-        # Whether to use normalization over a batch or a population
         self.is_train = tf.compat.v1.placeholder(tf.bool, name='is_train')
-
-        # input image batch
         self.input_imgs = tf.compat.v1.placeholder(tf.float32, shape=(None, None, None))
 
         # setup CNN, RNN and CTC
@@ -44,13 +38,11 @@ class RCNNCTCModel:
         """Create CNN layers."""
         cnn_in4d = tf.expand_dims(input=self.input_imgs, axis=3)
 
-        # list of parameters for the layers
         kernel_vals = [5, 5, 3, 3, 3]
         feature_vals = [1, 32, 64, 128, 128, 256]
         stride_vals = pool_vals = [(2, 2), (2, 2), (1, 2), (1, 2), (1, 2)]
         num_layers = len(stride_vals)
 
-        # create layers
         pool = cnn_in4d  # input to first CNN layer
         for i in range(num_layers):
             kernel = tf.Variable(
@@ -73,7 +65,6 @@ class RCNNCTCModel:
         cells = [tf.compat.v1.nn.rnn_cell.LSTMCell(num_units=num_hidden, state_is_tuple=True) for _ in
                  range(2)]  # 2 layers
 
-        # stack basic cells
         stacked = tf.compat.v1.nn.rnn_cell.MultiRNNCell(cells, state_is_tuple=True)
 
         # bidirectional RNN
@@ -93,19 +84,17 @@ class RCNNCTCModel:
         """Create CTC loss and decoder."""
         # BxTxC -> TxBxC
         self.ctc_in_3d_tbc = tf.transpose(a=self.rnn_out_3d, perm=[1, 0, 2])
-        # ground truth text as sparse tensor
+
         self.gt_texts = tf.SparseTensor(tf.compat.v1.placeholder(tf.int64, shape=[None, 2]),
                                         tf.compat.v1.placeholder(tf.int32, [None]),
                                         tf.compat.v1.placeholder(tf.int64, [2]))
 
-        # calc loss for batch
         self.seq_len = tf.compat.v1.placeholder(tf.int32, [None])
         self.loss = tf.reduce_mean(
             input_tensor=tf.compat.v1.nn.ctc_loss(labels=self.gt_texts, inputs=self.ctc_in_3d_tbc,
                                                   sequence_length=self.seq_len,
                                                   ctc_merge_repeated=True))
 
-        # calc loss for each element to compute label probability
         self.saved_ctc_input = tf.compat.v1.placeholder(tf.float32,
                                                         shape=[None, None, len(self.char_list) + 1])
         self.loss_per_element = tf.compat.v1.nn.ctc_loss(labels=self.gt_texts, inputs=self.saved_ctc_input,
@@ -125,7 +114,6 @@ class RCNNCTCModel:
         model_dir = 'model_save/'
         latest_snapshot = tf.train.latest_checkpoint(model_dir)  # is there a saved model?
 
-        # if model must be restored (for inference), there must be a snapshot
         if self.must_restore and not latest_snapshot:
             raise Exception('No saved model found in: ' + model_dir)
 
@@ -143,11 +131,10 @@ class RCNNCTCModel:
         """Put ground truth texts into sparse tensor for ctc_loss."""
         indices = []
         values = []
-        shape = [len(texts), 0]  # last entry must be max(labelList[i])
-
+        shape = [len(texts), 0]
         # go over all texts
         for batchElement, text in enumerate(texts):
-            # convert to string of label (i.e. class-ids)
+            # convert to string of label
             label_str = [self.char_list.index(c) for c in text]
             # sparse tensor must have size of max. label-string
             if len(label_str) > shape[1]:
