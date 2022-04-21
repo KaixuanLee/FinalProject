@@ -8,8 +8,13 @@ https://github.com/amzn/convolutional-handwriting-gan
 
 ### Other useful link
 
+#### IAM handwriting database
+https://fki.tic.heia-fr.ch/databases/iam-handwriting-database
+
 #### CRNN
 https://github.com/Belval/CRNN
+
+![v2-7ed5c65fe79dce49f006a9171cc1a80e_r](https://user-images.githubusercontent.com/92129106/163869344-b134e810-c011-4c46-b7b8-de6d5221ca6f.jpg)
 
 #### CTC Word Beam Search Decoding Algorithm
 https://github.com/githubharald/CTCWordBeamSearch
