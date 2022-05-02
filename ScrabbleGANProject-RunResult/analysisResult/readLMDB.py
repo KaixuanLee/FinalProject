@@ -1,5 +1,4 @@
 # Extract data (or pictures) from generated LMDB format files
-
 from base64 import encode
 from PIL import Image
 import lmdb
@@ -18,5 +17,5 @@ def read_from_lmdb(lmdb_path):
           with open(os.path.join("../result2/"+img_name),'wb') as f:
               f.write(data)
 
-read_from_lmdb("E:/MyUniversity/Advaced Intro to Machine Learning _CSCI642/final project/convolutional-handwriting-gan-master/lmdb_files/finalProjectDemo2_IAM_concat100k")
+read_from_lmdb("E:/Advaced Intro to Machine Learning _CSCI642/final project/convolutional-handwriting-gan-master/lmdb_files/finalProjectDemo2_IAM_concat100k")
 

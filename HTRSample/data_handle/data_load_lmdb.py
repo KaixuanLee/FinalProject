@@ -12,7 +12,6 @@ Batch = namedtuple('Batch', 'imgs, gt_texts, batch_size, file_names')
 
 class DataLoadLmdb:
     def __init__(self, dataset_path: Path, batch_size: int = 500, data_split: float = 0.70) -> None:
-
         self.env = lmdb.open(str(dataset_path / 'lmdb'), readonly=True)
         self.data_augmentation = False
         self.curr_idx = 0
@@ -27,20 +26,16 @@ class DataLoadLmdb:
                 continue
             line_split = line.strip().split(' ')
             assert len(line_split) >= 9
-
             file_name_split = line_split[0].split('-')
             file_name_subdir1 = file_name_split[0]
             file_name_subdir2 = f'{file_name_split[0]}-{file_name_split[1]}'
             file_base_name = line_split[0] + '.png'
             file_name = dataset_path / 'wordImages' / file_name_subdir1 / file_name_subdir2 / file_base_name
-
             if line_split[0] in bad_samples_reference:
                 print('Ignoring known broken image:', file_name)
                 continue
-
             gt_text = ' '.join(line_split[8:])  # word are at 9 columns
             chars = chars.union(set(list(gt_text)))
-
             # put sample into list
             self.samples.append(Sample(gt_text, file_name))
 
@@ -48,7 +43,6 @@ class DataLoadLmdb:
         split_idx = int(data_split * len(self.samples))
         self.train_samples = self.samples[:split_idx]
         self.validation_samples = self.samples[split_idx:]
-
         self.train_words = [x.gt_text for x in self.train_samples]
         self.validation_words = [x.gt_text for x in self.validation_samples]
         self.train_set()
@@ -90,11 +84,8 @@ class DataLoadLmdb:
 
     def get_next(self) -> Batch:
         batch_range = range(self.curr_idx, min(self.curr_idx + self.batch_size, len(self.samples)))
-
         imgs = [self._get_img(i) for i in batch_range]
         gt_texts = [self.samples[i].gt_text for i in batch_range]
-
         file_names = [self.samples[i].file_name for i in batch_range]
-
         self.curr_idx += self.batch_size
         return Batch(imgs, gt_texts, len(imgs), file_names)
