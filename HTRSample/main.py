@@ -14,6 +14,7 @@ from util.visualizer import Visualizer
 import matplotlib.pyplot as plt
 import torchvision.transforms.functional as TF
 import numpy as np
+import pathlib
 
 class Option:
     def __init__(self) -> None:
@@ -41,6 +42,7 @@ def train(model: RCNNCTCModel, loader: DataLoadLmdb, line_mode, learning_stagnat
     visualizer.reset()
     char_error_rate = 1
     word_accuracy = 0
+
     while True:
         epoch += 1
         print('--------------------Begin Train--------------------')
@@ -152,7 +154,8 @@ def main():
     datasets_split = 0.95
     lmdb_path = Path("datasets_IAM")
     line_mode = False
-    infer_img_path = "datasets_IAM/samples_wordImages/a01-000u/a01-000u-03-05.png"
+    # infer_img_path = "datasets_IAM/samples_wordImages/a01-000u/a01-000u-01-04.png"
+    # infer_img_path = "datasets_IAM/samples_CVL/0001-1-0-1-a.tif"
 
     if command == 'train':
         loader = DataLoadLmdb(lmdb_path, batch_size, datasets_split)
@@ -163,7 +166,12 @@ def main():
         with open("datasets_IAM/charList.txt") as f:
             fn_char_list = list(f.read())
         model = RCNNCTCModel(fn_char_list, must_restore=True)
-        infer(model, infer_img_path)
+        for path in list(pathlib.Path("datasets_IAM/samples_CVL/").rglob("*")):
+            path = str(path)
+            name = path.split("\\")[-1]
+            infer(model, path)
+            print(name)
+
 
 
 if __name__ == '__main__':
